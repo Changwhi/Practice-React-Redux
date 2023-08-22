@@ -5,8 +5,8 @@ import { counterActions } from '../store/index'
 
 const Counter = () => {
     const dispatch = useDispatch();
-    const counter = useSelector(state => state.counter);
-    const toggle = useSelector(state => state.isExpended);
+    const counter = useSelector(state => state.counter.counter);
+    const toggle = useSelector(state => state.counter.isExpended);
 
     const increment = () => {
         dispatch(counterActions.increment());
