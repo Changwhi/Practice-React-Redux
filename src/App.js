@@ -12,8 +12,8 @@ function App() {
     return (
         <Fragment>
             <Header />
-        { !isLoggedIn &&<Auth />}
-        { isLoggedIn && <UserProfile /> }
+            {!isLoggedIn && <Auth />}
+            {isLoggedIn && <UserProfile />}
             <Counter />
         </Fragment>
     );
